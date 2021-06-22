@@ -1,0 +1,16 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
