@@ -18,7 +18,8 @@ che la verace via abbandonai.";
 
 $len = strlen($paragraph);
 $bad_word = $_GET['bad'];
-$new_paragraph = str_replace($bad_word, '***', $paragrafo);
+var_dump($bad_word);
+$new_paragraph = str_replace($_GET['bad'], '***', $paragraph);
 
 ?>
 
@@ -38,9 +39,9 @@ $new_paragraph = str_replace($bad_word, '***', $paragrafo);
     <p> 
         <?php echo $paragraph;?> 
     </p>
-    <p
-    >la lunghezza del paragrafo è: <?php echo $len;
-    echo $bad_word?>
+    <p>
+        la lunghezza del paragrafo è: <?php echo $len;
+        echo $bad_word?>
      </p>
     <h2>Testo censurato</h2>
     <p><?php echo $new_paragraph?></p>
